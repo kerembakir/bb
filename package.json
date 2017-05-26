@@ -1,0 +1,22 @@
+{
+  "name": "bb",
+  "version": "1.0.0",
+  "description": "Bull App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Yo",
+    "Lo"
+  ],
+  "author": "Kerem B",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "nodeman": "^1.1.2",
+    "pg": "^6.2.3",
+    "pug": "^2.0.0-rc.1"
+  }
+}
