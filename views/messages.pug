@@ -1,13 +1,12 @@
-doctype html
-html(lang="en")
-	head
-		link(rel='stylesheet', href='style.css', type = 'text/css')  
-	body
-		a(href='/create') Create a new post
-		br
-		h1 BB-App
-		br
-		h3 All messages:
-		each message in messages
-			h1 #{message.title}
-			h4 #{message.body}
+html
+  head
+    link(rel='stylesheet', href='style.css', type = 'text/css')  
+  body
+    a(href='/create') Create a new post
+    br
+    h1 BB-App
+    br
+    h3 All messages:
+    each message in messages
+      h1 #{message.title}
+      h4 #{message.body}
