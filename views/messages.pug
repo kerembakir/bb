@@ -1,12 +1,19 @@
 html
   head
-    link(rel='stylesheet', href='style.css', type = 'text/css')  
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")  
   body
-    a(href='/') Create a new post
-    br
-    h1 BB-App
-    br
-    h3 All messages:
-    each message in messages
-      h1 #{message.title}
-      h4 #{message.body}
+  nav(class="navbar navbar-light bg-faded")
+    ul.nav.nav-tabs
+      li(role='presentation')
+        a(href='/') Create
+      li.active(role='presentation')
+        a(href='/messages') Messages
+        
+    .container
+      .row
+        .col-xs-6.offset-xs-3
+          h1.text-xl-center Messages:
+          hr
+          each message in messages
+           h1 #{message.title}
+           h4 #{message.body}
