@@ -15,5 +15,11 @@ html
           h1.text-xl-center Messages:
           hr
           each message in messages
-           h1 #{message.title}
-           h4 #{message.body}
+            .media
+              .media-left
+                img.media-object(src='/images/photo_kerem.jpg', style='width:60px')
+              .media-body
+                h4.media-heading #{message.title}
+                p
+                  | #{message.body}
+            hr
