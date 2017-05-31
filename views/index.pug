@@ -1,10 +1,10 @@
 html
   head
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
-
-  body
-    nav(class="navbar navbar-light bg-faded")
+body
+  page-header
+  h1 Bulletin Board 
+  nav(class="navbar navbar-light bg-faded")
     ul.nav.nav-tabs
       li.active(role='presentation')
         a(href='/') Create
@@ -14,7 +14,7 @@ html
     .container
       .row
         .col-xs-6.offset-xs-3
-          h1.text-xl-center BB-App
+          h1.text-xl-center Write Message
           hr
           form(action="create" method='post' class= "form" name= "message")
             .form-group
@@ -22,7 +22,8 @@ html
               input(type="text" name='title' placeholder="Type a title" autocomplete="off" class="form-control")
             .form-group
               label Body:
-              input(type="text" name="body" placeholder="Type a message" autocomplete="off" class="form-control")
+              textarea(type="text" name="body" placeholder="Type a message" autocomplete="off" class="form-control" rows="5")
             .form-group
               button(type="submit" class="btn btn-success btn-lg btn-") Post Message
-        
+    script(src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js")
+
