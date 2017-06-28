@@ -1,10 +1,13 @@
-# blog-application
+# Bulletin Board Application
 
-![banner](img/blog.png)
+Website that allows people to post messages to a page. A message consists of a title and a body.
+The site has two pages:
+- The first page shows people a form where they can add a new message.
+- The second page shows each of the messages people have posted.
 
+All messages are stored in a postgres database. 
 
-> Blog application assignment using NodeJS, Express, PostgreSQL and Sequelize. Users can register, login and logout, post a message and comment on the messages.  
-
+![banner](http://members.chello.nl/m.van.duren/img/bb-1.png)
 
 ## License
 
